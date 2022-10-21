@@ -1,0 +1,27 @@
+.list-container{
+   .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+   
+      .card{
+         margin: 5px;
+      }
+   }
+
+   .shadow-bottom{
+      border-bottom: 2px solid gainsboro;
+      padding: 20px;
+   }
+
+   .cards-container {
+      height: 1000px;
+      overflow: auto;
+      overflow-y: scroll;
+   }
+
+
+}
