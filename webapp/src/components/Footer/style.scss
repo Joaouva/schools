@@ -1,8 +1,8 @@
 .footer-container {
-   height: 150px;
+   height: 12vh;
    background-color: #1a1a1a;
    display: flex;
-   justify-content: center;
+   justify-content: flex-end;
    align-items: flex-end;
 
    p{
@@ -10,5 +10,6 @@
       margin-bottom: 40px;
       font-size: 0.8em;
       text-align: center;
+      margin-right: 20px;
    }
 }
