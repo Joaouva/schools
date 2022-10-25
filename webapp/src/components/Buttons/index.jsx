@@ -1,9 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import Button from "react-bootstrap/Button";
 
 export default function Buttons({setTypeOfSchool, typeOfSchool}) {
-   const[activePrivate, setActivePrivate] = useState(false);
-   const[activePublic, setActivePublic] = useState(false);
    
   
    const handleClick = (type) => {

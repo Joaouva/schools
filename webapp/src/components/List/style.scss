@@ -22,5 +22,12 @@
       overflow-y: scroll;
    }
 
+   .download-container {
+      display: flex;
+      justify-content: center;
+   }
 
+   a {
+      margin: 5px;
+   }
 }

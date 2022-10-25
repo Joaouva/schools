@@ -3,9 +3,9 @@ import CardItem from "../Card";
 import { useQuery } from "react-query";
 import Buttons from "../Buttons";
 import { getPrivateSchools, getPublicSchools } from "./queries";
-
 import "./style.scss";
 import SearchBar from "../SearchBar";
+import { Button } from "react-bootstrap";
 
 export default function List() {
   const [typeOfSchool, setTypeOfSchool] = useState("");
@@ -39,9 +39,6 @@ export default function List() {
     }
   }, [searchInput]);
 
-  console.log(filterSchoolsPrivate, "Private");
-  console.log(filterSchoolsPublic, "public");
-
   return (
     <div className="list-container">
       <div className="container">
@@ -52,6 +49,14 @@ export default function List() {
           setTypeOfSchool={setTypeOfSchool}
           typeOfSchool={typeOfSchool}
         />
+      </div>
+      <div className="download-container">
+        <a href="files/EscolasPrivadas.xlsx" download>
+        <Button variant="secondary">Download BD Privadas</Button>
+        </a>
+        <a href="files/EscolasPublicas.xlsx" download>
+        <Button variant="secondary">Download BD Publicas</Button>
+        </a>
       </div>
       <div className="cards-container">
         {typeOfSchool === "private" && (
